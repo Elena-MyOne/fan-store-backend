@@ -678,8 +678,19 @@ app.get('/', (req, res) => {
   res.send('App is working');
 });
 
+// app.get('/products', (req, res) => {
+//   res.send(data.products);
+// });
+
 app.get('/products', (req, res) => {
-  res.send(data.products);
+  const { category } = req.query;
+  let filteredProducts = [...data.products];
+
+  if (category && category !== 'all') {
+    filteredProducts = filteredProducts.filter(product => product.category === category);
+  }
+
+  res.send(filteredProducts);
 });
 
 app.get('/products/:productId', (req, res) => {
