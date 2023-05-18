@@ -314,7 +314,7 @@ const data = {
     {
       id: 21,
       category: 'decorations',
-      faculty: 'none',
+      faculty: 'None',
       name: 'Hogwarts Crest Wall Art',
       image: '../assets/decorations/hogwarts-crest-wall-art.webp',
       description:
@@ -362,7 +362,7 @@ const data = {
     {
       id: 25,
       category: 'decorations',
-      faculty: 'none',
+      faculty: 'None',
       name: 'Hogwarts Castle Water Globe',
       image: '../assets/decorations/hogwarts-castle-water-globe.webp',
       description:
@@ -410,7 +410,7 @@ const data = {
     {
       id: 29,
       category: 'pillows',
-      faculty: 'none',
+      faculty: 'None',
       name: 'Hogwarts Crest Pillow',
       image: '../assets/pillow/hogwarts-crest-pillow.webp',
       description:
@@ -422,7 +422,7 @@ const data = {
     {
       id: 30,
       category: 'pillows',
-      faculty: 'none',
+      faculty: 'None',
       name: 'The Deathly Hallows Pillow',
       image: '../assets/pillow/the-deathly-hallows-pillow.webp',
       description:
@@ -530,7 +530,7 @@ const data = {
     {
       id: 39,
       category: 'souvenirs',
-      faculty: 'none',
+      faculty: 'None',
       name: 'Monster Book of Monsters Journal',
       image: '../assets/souvenirs/monster-book-of-monsters-journal.webp',
       description:
@@ -590,7 +590,7 @@ const data = {
     {
       id: 44,
       category: 'souvenirs',
-      faculty: 'none',
+      faculty: 'None',
       name: 'Quill Stand And Ink Set',
       image: '../assets/souvenirs/quill-stand-and-ink-set.webp',
       description:
@@ -688,6 +688,11 @@ app.get('/products', (req, res) => {
 
   if (category && category !== 'all') {
     filteredProducts = filteredProducts.filter(product => product.category === category);
+  }
+
+  if (faculty && faculty !== 'All') {
+    const formattedFaculty = faculty.charAt(0).toUpperCase() + faculty.slice(1);
+    filteredProducts = filteredProducts.filter(product => product.faculty === formattedFaculty);
   }
 
   res.send(filteredProducts);
