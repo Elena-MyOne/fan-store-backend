@@ -433,7 +433,7 @@ const data = {
     },
     {
       id: 31,
-      category: 'Sweaters',
+      category: 'sweaters',
       faculty: 'Hufflepuff',
       name: 'Hufflepuff Quidditch Adult Sweater',
       image: '../assets/sweaters/hufflepuff-quidditch-adult-sweater.webp',
@@ -445,7 +445,7 @@ const data = {
     },
     {
       id: 32,
-      category: 'Sweaters',
+      category: 'sweaters',
       faculty: 'Ravenclaw',
       name: 'Ravenclaw Quidditch Adult Sweater',
       image: '../assets/sweaters/ravenclaw-quidditch-adult-sweater.webp',
@@ -457,7 +457,7 @@ const data = {
     },
     {
       id: 33,
-      category: 'Sweaters',
+      category: 'sweaters',
       faculty: 'Slytherin',
       name: 'Slytherin Quidditch Adult Sweater',
       image: '../assets/sweaters/slytherin-quidditch-adult-sweater.webp',
@@ -469,7 +469,7 @@ const data = {
     },
     {
       id: 34,
-      category: 'Sweaters',
+      category: 'sweaters',
       faculty: 'Gryffindor',
       name: 'Gryffindor Quidditch Adult Sweater',
       image: '../assets/sweaters/gryffindor-quidditch-adult-sweater.webp',
@@ -481,7 +481,7 @@ const data = {
     },
     {
       id: 35,
-      category: 'Sweaters',
+      category: 'sweaters',
       faculty: 'Gryffindor',
       name: 'G For George Adult Sweater',
       image: '../assets/sweaters/for-george-adult-sweater.webp',
@@ -493,7 +493,7 @@ const data = {
     },
     {
       id: 36,
-      category: 'Sweaters',
+      category: 'sweaters',
       faculty: 'Gryffindor',
       name: 'F For Fred Adult Sweater',
       image: '../assets/sweaters/for-fred-adult-sweater.webp',
@@ -505,7 +505,7 @@ const data = {
     },
     {
       id: 37,
-      category: 'Sweaters',
+      category: 'sweaters',
       faculty: 'Gryffindor',
       name: 'H For Harry Adult Sweater',
       image: '../assets/sweaters/for-harry-adult-sweater.webp',
@@ -517,7 +517,7 @@ const data = {
     },
     {
       id: 38,
-      category: 'Sweaters',
+      category: 'sweaters',
       faculty: 'Gryffindor',
       name: 'R For Ron Adult Sweater',
       image: '../assets/sweaters/for-ron-adult-sweaterwebp.webp',
@@ -529,7 +529,7 @@ const data = {
     },
     {
       id: 39,
-      category: 'Souvenirs',
+      category: 'souvenirs',
       faculty: 'none',
       name: 'Monster Book of Monsters Journal',
       image: '../assets/souvenirs/monster-book-of-monsters-journal.webp',
@@ -541,7 +541,7 @@ const data = {
     },
     {
       id: 40,
-      category: 'Souvenirs',
+      category: 'souvenirs',
       faculty: 'Gryffindor',
       name: 'Gryffindor Travel Tumbler',
       image: '../assets/souvenirs/gryffindor-travel-tumbler.webp',
@@ -553,7 +553,7 @@ const data = {
     },
     {
       id: 41,
-      category: 'Souvenirs',
+      category: 'souvenirs',
       faculty: 'Slytherin',
       name: 'Slytherin Travel Tumbler',
       image: '../assets/souvenirs/slytherin-travel-tumbler.webp',
@@ -565,7 +565,7 @@ const data = {
     },
     {
       id: 42,
-      category: 'Souvenirs',
+      category: 'souvenirs',
       faculty: 'Ravenclaw',
       name: 'Ravenclaw Travel Tumbler',
       image: '../assets/souvenirs/ravenclaw-travel-tumbler.webp',
@@ -577,7 +577,7 @@ const data = {
     },
     {
       id: 43,
-      category: 'Souvenirs',
+      category: 'souvenirs',
       faculty: 'Hufflepuff',
       name: 'Hufflepuff Travel Tumbler',
       image: '../assets/souvenirs/hufflepuff-travel-tumbler.webp',
@@ -589,7 +589,7 @@ const data = {
     },
     {
       id: 44,
-      category: 'Souvenirs',
+      category: 'souvenirs',
       faculty: 'none',
       name: 'Quill Stand And Ink Set',
       image: '../assets/souvenirs/quill-stand-and-ink-set.webp',
@@ -601,7 +601,7 @@ const data = {
     },
     {
       id: 45,
-      category: 'Souvenirs',
+      category: 'souvenirs',
       faculty: 'Slytherin',
       name: 'Slytherin Lined Journal',
       image: '../assets/souvenirs/slytherin-lined-journal.webp',
@@ -613,7 +613,7 @@ const data = {
     },
     {
       id: 46,
-      category: 'Souvenirs',
+      category: 'souvenirs',
       faculty: 'Hufflepuff',
       name: 'Hufflepuff Cup',
       image: '../assets/souvenirs/hufflepuff-cup.webp',
@@ -625,7 +625,7 @@ const data = {
     },
     {
       id: 47,
-      category: 'Robes',
+      category: 'robes',
       faculty: 'Slytherin',
       name: 'Slytherin Robe',
       image: '../assets/robes/slytherin-schooluniform-accessories-robes.webp',
@@ -637,7 +637,7 @@ const data = {
     },
     {
       id: 48,
-      category: 'Robes',
+      category: 'robes',
       faculty: 'Gryffindor',
       name: 'Gryffindor Robe',
       image: '../assets/robes/gryffindor-schooluniform-accessories-robes.webp',
@@ -649,7 +649,7 @@ const data = {
     },
     {
       id: 49,
-      category: 'Robes',
+      category: 'robes',
       faculty: 'Ravenclaw',
       name: 'Ravenclaw Robe',
       image: '../assets/robes/ravenclaw-schooluniform-accessories-robes.webp',
@@ -661,7 +661,7 @@ const data = {
     },
     {
       id: 50,
-      category: 'Robes',
+      category: 'robes',
       faculty: 'Hufflepuff',
       name: 'Hufflepuff Robe',
       image: '../assets/robes/hufflepuff-schooluniform-accessories-robes.webp',
