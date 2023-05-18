@@ -683,7 +683,7 @@ app.get('/', (req, res) => {
 // });
 
 app.get('/products', (req, res) => {
-  const { category } = req.query;
+  const { category, faculty } = req.query;
   let filteredProducts = [...data.products];
 
   if (category && category !== 'all') {
