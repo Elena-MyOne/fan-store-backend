@@ -30,6 +30,34 @@ To retrieve data about all products, send a GET request to the following endpoin
 http://localhost:4200/products
 ```
 
+### Filtering Products
+
+#### Filtering Products by Category
+
+To filter products by category, you can include the category query parameter in the GET request. Set the value of the category parameter to the desired category: "wands", "decorations", "pillows", "sweaters", "souvenirs", and "robes". For example, to get products in the "wands" category, use the following URL:
+
+```
+http://localhost:4200/products?category=wands
+```
+
+If you want to retrieve products from all categories, use `category=all`.
+
+#### Filtering Products by Faculty
+
+To further refine the product results, you can include the category and faculty query parameters in the GET request. Set the values of both parameters to the desired category and faculty, respectively. For example, to get products in the "Wands" category associated with the "Gryffindor" faculty, use the following URL:
+
+```
+http://localhost:4200/products?faculty=gryffindor
+```
+
+#### Filtering Products by Category and Faculty
+
+To filter products by Category and Faculty, combine them through "&":
+
+```
+http://localhost:4200/products?category=wands&faculty=gryffindor
+```
+
 This will return information about all the products in JSON format.
 
 ### Getting Info about a Single Product
