@@ -696,7 +696,7 @@ app.get('/products', (req, res) => {
   }
 
   if (name) {
-    filteredProducts = filteredProducts.filter(product => product.name === name)
+    filteredProducts = filteredProducts.filter(product => product.name.toLowerCase().includes(name.toLowerCase()));
   }
 
   res.send(filteredProducts);
