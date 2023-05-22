@@ -50,12 +50,20 @@ To further refine the product results, you can include the category and faculty 
 http://localhost:4200/products?faculty=gryffindor
 ```
 
-#### Filtering Products by Category and Faculty
+#### Filtering Product by product Name
 
-To filter products by Category and Faculty, combine them through "&":
+To filter products by their name, include the name query parameter in GET request:
 
 ```
-http://localhost:4200/products?category=wands&faculty=gryffindor
+http://localhost:4200/products?name=harry
+```
+
+#### Filtering Products by Category, Faculty and Name
+
+To filter products by Category, Faculty, and product Name combine them through "&":
+
+```
+http://localhost:4200/products?faculty=gryffindor&category=all&name=harry
 ```
 
 This will return information about all the products in JSON format.
