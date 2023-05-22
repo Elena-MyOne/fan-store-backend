@@ -683,7 +683,7 @@ app.get('/', (req, res) => {
 // });
 
 app.get('/products', (req, res) => {
-  const { category, faculty } = req.query;
+  const { category, faculty, name} = req.query;
   let filteredProducts = [...data.products];
 
   if (category && category !== 'all') {
@@ -693,6 +693,10 @@ app.get('/products', (req, res) => {
   if (faculty && faculty !== 'All') {
     const formattedFaculty = faculty.charAt(0).toUpperCase() + faculty.slice(1);
     filteredProducts = filteredProducts.filter(product => product.faculty === formattedFaculty);
+  }
+
+  if (name) {
+    filteredProducts = filteredProducts.filter(product => product.name === name)
   }
 
   res.send(filteredProducts);
