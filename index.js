@@ -679,11 +679,31 @@ app.get('/', (req, res) => {
 });
 
 // app.get('/products', (req, res) => {
-//   res.send(data.products);
+//   const { category, faculty, name} = req.query;
+//   let filteredProducts = [...data.products];
+
+//   if (category && category !== 'all') {
+//     filteredProducts = filteredProducts.filter(product => product.category === category);
+//   }
+
+//   if (faculty && faculty !== 'All') {
+//     const formattedFaculty = faculty.charAt(0).toUpperCase() + faculty.slice(1);
+//     filteredProducts = filteredProducts.filter(product => product.faculty === formattedFaculty);
+//   }
+
+//   if (name) {
+//     filteredProducts = filteredProducts.filter(product => product.name.toLowerCase().includes(name.toLowerCase()));
+//   }
+
+//   res.send(filteredProducts);
 // });
 
 app.get('/products', (req, res) => {
-  const { category, faculty, name} = req.query;
+  const { page, limit, category, faculty, name} = req.query;
+
+  const pageNumber = parseInt(page);
+  const limitNumber = parseInt(limit);
+
   let filteredProducts = [...data.products];
 
   if (category && category !== 'all') {
@@ -699,7 +719,18 @@ app.get('/products', (req, res) => {
     filteredProducts = filteredProducts.filter(product => product.name.toLowerCase().includes(name.toLowerCase()));
   }
 
-  res.send(filteredProducts);
+  const startIndex = (pageNumber - 1) * limitNumber;
+  const endIndex = startIndex + limitNumber;
+  const paginatedProducts = filteredProducts.slice(startIndex, endIndex);
+
+  const response = {
+    totalProducts: filteredProducts.length,
+    totalPages: Math.ceil(filteredProducts.length / limitNumber),
+    currentPage: pageNumber,
+    products: paginatedProducts
+  };
+
+  res.send(response);
 });
 
 app.get('/products/:productId', (req, res) => {
