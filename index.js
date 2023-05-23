@@ -196,7 +196,7 @@ const data = {
       category: 'wands',
       faculty: 'Ravenclaw',
       name: 'Gilderoy Lockhart wand',
-      image: '../assets/wands/elder-wand.webp',
+      image: '../assets/wands/gilderoy-lockhart-wand.png',
       length: '15 ins',
       core: 'thestral hair',
       wood: 'elder',
