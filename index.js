@@ -678,26 +678,6 @@ app.get('/', (req, res) => {
   res.send('App is working');
 });
 
-// app.get('/products', (req, res) => {
-//   const { category, faculty, name} = req.query;
-//   let filteredProducts = [...data.products];
-
-//   if (category && category !== 'all') {
-//     filteredProducts = filteredProducts.filter(product => product.category === category);
-//   }
-
-//   if (faculty && faculty !== 'All') {
-//     const formattedFaculty = faculty.charAt(0).toUpperCase() + faculty.slice(1);
-//     filteredProducts = filteredProducts.filter(product => product.faculty === formattedFaculty);
-//   }
-
-//   if (name) {
-//     filteredProducts = filteredProducts.filter(product => product.name.toLowerCase().includes(name.toLowerCase()));
-//   }
-
-//   res.send(filteredProducts);
-// });
-
 app.get('/products', (req, res) => {
   const { page, limit, category, faculty, name} = req.query;
 

@@ -27,17 +27,17 @@ This will start the server and make your app accessible at `http://localhost:420
 To retrieve data about all products, send a GET request to the following endpoint:
 
 ```
-http://localhost:4200/products
+http://localhost:4200/products?page=1&limit=50
 ```
 
-### Filtering Products
+### Filtering Products and Pagination
 
 #### Filtering Products by Category
 
 To filter products by category, you can include the category query parameter in the GET request. Set the value of the category parameter to the desired category: "wands", "decorations", "pillows", "sweaters", "souvenirs", and "robes". For example, to get products in the "wands" category, use the following URL:
 
 ```
-http://localhost:4200/products?category=wands
+http://localhost:4200/products?page=1&limit=50&category=wands
 ```
 
 If you want to retrieve products from all categories, use `category=all`.
@@ -47,7 +47,7 @@ If you want to retrieve products from all categories, use `category=all`.
 To further refine the product results, you can include the category and faculty query parameters in the GET request. Set the values of both parameters to the desired category and faculty, respectively. For example, to get products in the "Wands" category associated with the "Gryffindor" faculty, use the following URL:
 
 ```
-http://localhost:4200/products?faculty=gryffindor
+http://localhost:4200/products?page=1&limit=50&faculty=gryffindor
 ```
 
 #### Filtering Product by product Name
@@ -55,7 +55,7 @@ http://localhost:4200/products?faculty=gryffindor
 To filter products by their name, include the name query parameter in GET request:
 
 ```
-http://localhost:4200/products?name=harry
+http://localhost:4200/products?page=1&limit=50&name=harry
 ```
 
 #### Filtering Products by Category, Faculty and Name
@@ -63,7 +63,18 @@ http://localhost:4200/products?name=harry
 To filter products by Category, Faculty, and product Name combine them through "&":
 
 ```
-http://localhost:4200/products?faculty=gryffindor&category=all&name=harry
+http://localhost:4200/products?page=1&limit=50&faculty=gryffindor&category=all&name=harry
+```
+
+#### Pagination
+
+To paginate the product results, you can change the page and limit query parameters in the GET request.
+
+`page`: Specify the current page number. Default is 1.
+`limit`: Specify the number of products per page. Default is 10.
+
+```
+http://localhost:4200/products?page=1&limit=10&category=all&faculty=All&name=
 ```
 
 This will return information about all the products in JSON format.
