@@ -15,7 +15,7 @@ const users = [
     name: 'John Smith',
     email: 'john99@yahoo.com',
     password: '123aA$$$'
-  }
+  },
   {
     id: 2,
     name: 'Sara Anna',
@@ -769,7 +769,7 @@ app.patch('/users/:userId', (req, res) => {
     res.status(404).send('User not found');
     return;
   }
-  
+
   if (body.name) {
     user.name = body.name;
   }
