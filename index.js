@@ -9,6 +9,21 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+const users = [
+  {
+    id: 1,
+    name: 'John Smith',
+    email: 'john99@yahoo.com',
+    password: '123aA$$$'
+  }
+  {
+    id: 2,
+    name: 'Sara Anna',
+    email: 'ara21@yahoo.com',
+    password: '123zZ$$$'
+  }
+]
+
 const data = {
   products: [
     {
@@ -723,6 +738,53 @@ app.get('/products/:productId', (req, res) => {
   res.send(JSON.stringify(product));
 });
 
+app.post('/users', (req, res) => {
+  const userInfo = req.body;
+  const newUserId = users.length + 1;
+  const newUser = {
+    ...userInfo,
+    id: newUserId,
+  }
+  users.push(newUser);
+  res.send(JSON.stringify(newUser));
+});
+
+app.get('/users/:userId', (req, res) => {
+  const { userId } = req.params;
+  const user = users.find(user => user.id === parseInt(userId));
+  if (!user) {
+    res.status(404).send('User not found');
+    return;
+  }
+  const { password, ...userWithoutPassword } = user;
+  res.send(JSON.stringify(userWithoutPassword));
+});
+
+app.patch('/users/:userId', (req, res) => {
+  const { params, body } = req;
+  const { userId } = params;
+  const user = users.find(user => user.id === parseInt(userId));
+
+  if (!user) {
+    res.status(404).send('User not found');
+    return;
+  }
+  
+  if (body.name) {
+    user.name = body.name;
+  }
+
+  if (body.email) {
+    user.email = body.email;
+  }
+
+  if (body.password) {
+    user.password = body.password;
+  }
+
+  res.send(JSON.stringify(user));
+})
+
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Potter-fan-store app listening on port ${port}`);
 });
