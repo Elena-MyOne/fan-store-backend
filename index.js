@@ -749,6 +749,11 @@ app.post('/users', (req, res) => {
   res.send(JSON.stringify(newUser));
 });
 
+app.get('/users', (req, res) => {
+  const usersWithOutPassword = users.map(({ id, name, email }) => ({ id, name, email }));
+  res.send(JSON.stringify(usersWithOutPassword));
+})
+
 app.get('/users/:userId', (req, res) => {
   const { userId } = req.params;
   const user = users.find(user => user.id === parseInt(userId));
