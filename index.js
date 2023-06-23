@@ -746,7 +746,9 @@ app.post('/users', (req, res) => {
     id: newUserId,
   }
   users.push(newUser);
-  res.send(JSON.stringify(newUser));
+
+  const { password, ...userWithoutPassword } = newUser;
+  res.send(JSON.stringify(userWithoutPassword));
 });
 
 app.get('/users', (req, res) => {
