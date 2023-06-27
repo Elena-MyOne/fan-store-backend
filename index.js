@@ -740,6 +740,13 @@ app.get('/products/:productId', (req, res) => {
 
 app.post('/users', (req, res) => {
   const userInfo = req.body;
+
+  const existingUser = users.find(user => user.name === userInfo.name || user.email === userInfo.email);
+  if (existingUser) {
+    return res.status(409).send('User already exists');
+  }
+
+
   const newUserId = users.length + 1;
   const newUser = {
     ...userInfo,
@@ -756,9 +763,9 @@ app.get('/users', (req, res) => {
   res.send(JSON.stringify(usersWithOutPassword));
 })
 
-app.get('/users/:userId', (req, res) => {
-  const { userId } = req.params;
-  const user = users.find(user => user.id === parseInt(userId));
+app.get('/users/:identifier', (req, res) => {
+  const { identifier } = req.params;
+  const user = users.find(user => user.name === identifier || user.email === identifier);
   if (!user) {
     res.status(404).send('User not found');
     return;
