@@ -763,9 +763,9 @@ app.get('/users', (req, res) => {
   res.send(JSON.stringify(usersWithOutPassword));
 })
 
-app.get('/users/:identifier', (req, res) => {
+app.get('/users/:identifier/:password', (req, res) => {
   const { identifier } = req.params;
-  const user = users.find(user => user.name === identifier || user.email === identifier);
+  const user = users.find(user => (user.name === identifier || user.email === identifier) && user.password === password);
   if (!user) {
     res.status(404).send('User not found');
     return;
