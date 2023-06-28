@@ -764,8 +764,8 @@ app.get('/users', (req, res) => {
 })
 
 app.get('/users/:identifier/:password', (req, res) => {
-  const { identifier, password } = req.params;
-  const user = users.find(user => (user.name === identifier || user.email === identifier) && user.password === password);
+  const { identifier, password: providedPassword } = req.params;
+  const user = users.find(user => (user.name === identifier || user.email === identifier) && user.password === providedPassword);
   if (!user) {
     res.status(404).send('User not found');
     return;
