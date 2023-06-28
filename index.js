@@ -799,7 +799,7 @@ app.patch('/users/:userId', (req, res) => {
   res.send(JSON.stringify(user));
 });
 
-app.delete('users/:userId', (req, res) => {
+app.delete('/users/:userId', (req, res) => {
   const { userId } = req.params;
 
   const userIndex = users.findIndex(user => user.id === parseInt(userId));
