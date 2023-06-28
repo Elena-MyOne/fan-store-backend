@@ -797,7 +797,22 @@ app.patch('/users/:userId', (req, res) => {
   }
 
   res.send(JSON.stringify(user));
-})
+});
+
+app.delete('users/:userId', (req, res) => {
+  const { userId } = req.params;
+
+  const userIndex = users.findIndex(user => user.id === parseInt(userId));
+
+  if (userIndex === -1) {
+    res.status(404).send('User not found');
+    return;
+  }
+
+  users.splice(userIndex, 1)
+
+  res.send('User deleted successfully');
+});
 
 app.listen(port, () => {
   console.log(`Potter-fan-store app listening on port ${port}`);
