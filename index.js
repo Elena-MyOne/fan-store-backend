@@ -747,7 +747,7 @@ app.post('/users', (req, res) => {
   }
 
 
-  const newUserId = users.length + 1;
+  const newUserId = Math.max(...users.map(user => user.id)) + 1;
   const newUser = {
     ...userInfo,
     id: newUserId,
