@@ -775,8 +775,9 @@ app.get('/users/:identifier/:password', (req, res) => {
 });
 
 app.get('/users/:userId/:password', (req, res) => {
-   const { userId, password: providedPassword } = req.params;
-   const user = users.find(user => user.id === parseInt(userId, 10));
+  const id = Number(req.params.userId);
+  const providedPassword = req.params.password;
+  const user = users.find(user => user.id === id);
    if (!user) {
      res.status(404).send('User not found');
       return;
