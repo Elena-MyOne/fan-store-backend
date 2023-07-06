@@ -774,6 +774,20 @@ app.get('/users/:identifier/:password', (req, res) => {
   res.send(JSON.stringify(userWithoutPassword));
 });
 
+app.get('users/:userId/:password', (req, res) => {
+   const { userId, password: providedPassword } = req.params;
+   const user = users.find(user => user.id === parseInt(userId));
+   if (!user) {
+     res.status(404).send('User not found');
+      return;
+   }
+   if(user.password === providedPassword) {
+      res.send('Password matches');
+   } else {
+    res.send('Password does not match');
+  }
+});
+
 app.patch('/users/:userId', (req, res) => {
   const { params, body } = req;
   const { userId } = params;
