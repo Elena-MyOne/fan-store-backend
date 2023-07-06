@@ -774,7 +774,7 @@ app.get('/users/:identifier/:password', (req, res) => {
   res.send(JSON.stringify(userWithoutPassword));
 });
 
-app.get('users/:userId/:password', (req, res) => {
+app.get('/users/:userId/:password', (req, res) => {
    const { userId, password: providedPassword } = req.params;
    const user = users.find(user => user.id === parseInt(userId));
    if (!user) {
