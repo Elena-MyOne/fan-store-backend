@@ -810,7 +810,8 @@ app.patch('/users/:email', (req, res) => {
     user.password = body.password;
   }
 
-  res.send(JSON.stringify(user));
+  const { password, ...userWithoutPassword } = user;
+  res.send(JSON.stringify(userWithoutPassword));
 });
 
 app.delete('/users/:userId', (req, res) => {
