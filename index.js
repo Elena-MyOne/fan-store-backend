@@ -788,10 +788,10 @@ app.get('/users/:email/:password', (req, res) => {
   }
 });
 
-app.patch('/users/:userId', (req, res) => {
+app.patch('/users/:email', (req, res) => {
   const { params, body } = req;
-  const { userId } = params;
-  const user = users.find(user => user.id === parseInt(userId));
+  const { email: providedEmail } = params;
+  const user = users.find(user => user.email === providedEmail);
 
   if (!user) {
     res.status(404).send('User not found');
