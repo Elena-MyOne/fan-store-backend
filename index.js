@@ -31,7 +31,7 @@ const data = {
       category: 'Wands',
       faculty: 'Gryffindor',
       name: 'Elder wand',
-      image: '../assets/wands/elder-wand.webp',
+      image: './assets/wands/elder-wand.webp',
       length: '15 ins',
       core: 'thestral hair',
       wood: 'elder',
