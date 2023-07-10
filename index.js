@@ -5,7 +5,8 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = 4200;
 
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+// app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+app.use(cors({ origin: ['https://elena-myone.github.io/fan-store', 'http://localhost:3000'], credentials: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
