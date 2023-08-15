@@ -695,7 +695,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/products', (req, res) => {
-  const { page, limit, category, faculty, name} = req.query;
+  const { page, limit, category, faculty, name, sale, sort, order} = req.query;
 
   const pageNumber = parseInt(page);
   const limitNumber = parseInt(limit);
@@ -715,6 +715,20 @@ app.get('/products', (req, res) => {
     filteredProducts = filteredProducts.filter(product => product.name.toLowerCase().includes(name.toLowerCase()));
   }
 
+  if (sale) {
+    filteredProducts = filteredProducts.filter(product => product.sale !== 0);
+  }
+
+  if (sort && (order === 'asc' || order === 'desc')) {
+    filteredProducts.sort((a, b) => {
+      if (order === 'asc') {
+        return a[sort] - b[sort];
+      } else {
+        return b[sort] - a[sort];
+      }
+    });
+  }
+
   const startIndex = (pageNumber - 1) * limitNumber;
   const endIndex = startIndex + limitNumber;
   const paginatedProducts = filteredProducts.slice(startIndex, endIndex);
@@ -728,6 +742,41 @@ app.get('/products', (req, res) => {
 
   res.send(response);
 });
+
+// app.get('/products', (req, res) => {
+//   const { page, limit, category, faculty, name} = req.query;
+
+//   const pageNumber = parseInt(page);
+//   const limitNumber = parseInt(limit);
+
+//   let filteredProducts = [...data.products];
+
+//   if (category && category !== 'all') {
+//     filteredProducts = filteredProducts.filter(product => product.category === category);
+//   }
+
+//   if (faculty && faculty !== 'All') {
+//     const formattedFaculty = faculty.charAt(0).toUpperCase() + faculty.slice(1);
+//     filteredProducts = filteredProducts.filter(product => product.faculty === formattedFaculty);
+//   }
+
+//   if (name) {
+//     filteredProducts = filteredProducts.filter(product => product.name.toLowerCase().includes(name.toLowerCase()));
+//   }
+
+//   const startIndex = (pageNumber - 1) * limitNumber;
+//   const endIndex = startIndex + limitNumber;
+//   const paginatedProducts = filteredProducts.slice(startIndex, endIndex);
+
+//   const response = {
+//     totalProducts: filteredProducts.length,
+//     totalPages: Math.ceil(filteredProducts.length / limitNumber),
+//     currentPage: pageNumber,
+//     products: paginatedProducts
+//   };
+
+//   res.send(response);
+// });
 
 app.get('/products/:productId', (req, res) => {
   const id = Number(req.params.productId);
