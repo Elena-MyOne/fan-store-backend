@@ -58,6 +58,22 @@ To filter products by their name, include the name query parameter in GET reques
 http://localhost:4200/products?page=1&limit=50&name=harry
 ```
 
+#### Filtering Product sale products
+
+To get unordered products on sale, include the `sale=true` query parameter in GET request: 
+
+```
+http://localhost:4200/products?page=1&limit=50&sale=true
+```
+
+#### Filtering Product by order `desc` and `asc` products
+
+To get ordered products by order `desc` and `asc` on sale, or by price, or rate, include the `sort=sale&order=desc` or `sort=sale&order=asc` (or `sort=price&order=desc`, `sort=rate&order=desc`) query parameter in GET request: 
+
+```
+http://localhost:4200/products?page=1&limit=50&sale=true&sort=sale&order=desc
+```
+
 #### Filtering Products by Category, Faculty and Name
 
 To filter products by Category, Faculty, and product Name combine them through "&":

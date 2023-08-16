@@ -385,7 +385,7 @@ const data = {
         'Hand-painted water globe featuring Hogwarts castle from The Wizarding World of Harry Potter',
       price: 48.95,
       rate: 3.9,
-      sale: 50,
+      sale: 20,
     },
     {
       id: 26,
@@ -673,7 +673,7 @@ const data = {
         'This authentic Slytherin robe has contrasting green lining, pockets, and features an embroidered patch of the house crest. 100% Polyester',
       price: 150.0,
       rate: 4.6,
-      sale: 5,
+      sale: 25,
     },
     {
       id: 50,
@@ -742,41 +742,6 @@ app.get('/products', (req, res) => {
 
   res.send(response);
 });
-
-// app.get('/products', (req, res) => {
-//   const { page, limit, category, faculty, name} = req.query;
-
-//   const pageNumber = parseInt(page);
-//   const limitNumber = parseInt(limit);
-
-//   let filteredProducts = [...data.products];
-
-//   if (category && category !== 'all') {
-//     filteredProducts = filteredProducts.filter(product => product.category === category);
-//   }
-
-//   if (faculty && faculty !== 'All') {
-//     const formattedFaculty = faculty.charAt(0).toUpperCase() + faculty.slice(1);
-//     filteredProducts = filteredProducts.filter(product => product.faculty === formattedFaculty);
-//   }
-
-//   if (name) {
-//     filteredProducts = filteredProducts.filter(product => product.name.toLowerCase().includes(name.toLowerCase()));
-//   }
-
-//   const startIndex = (pageNumber - 1) * limitNumber;
-//   const endIndex = startIndex + limitNumber;
-//   const paginatedProducts = filteredProducts.slice(startIndex, endIndex);
-
-//   const response = {
-//     totalProducts: filteredProducts.length,
-//     totalPages: Math.ceil(filteredProducts.length / limitNumber),
-//     currentPage: pageNumber,
-//     products: paginatedProducts
-//   };
-
-//   res.send(response);
-// });
 
 app.get('/products/:productId', (req, res) => {
   const id = Number(req.params.productId);
