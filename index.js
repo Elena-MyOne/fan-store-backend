@@ -39,7 +39,7 @@ const data = {
       description:
         'The Elder Wand is one of the most powerful wands in the wizarding world, made of elder wood and containing a core of thestral tail hair. According to legend, it was created by Death himself and whoever possessed it was said to be invincible. It was famously wielded by Albus Dumbledore and then by Harry Potter, who ultimately chose to destroy it.',
       price: 35.0,
-      rate: 5.0,
+      rate: 4.5,
       sale: 0,
     },
     {
@@ -249,7 +249,7 @@ const data = {
       description:
         ' A wand made of hawthorn wood and unicorn hair, known for its flexibility and suitability for the Dark Arts. It was passed down through generations of the Malfoy family.',
       price: 35.0,
-      rate: 5.0,
+      rate: 4.5,
       sale: 0,
     },
     {
@@ -420,7 +420,7 @@ const data = {
       description:
         'Decorative pillow featuring house Ravenclaw with an embroidered snake and house colors. Size 17" x 17", made from polyester and cotton.',
       price: 35.0,
-      rate: 4.1,
+      rate: 5.0,
       sale: 0,
     },
     {
@@ -648,8 +648,8 @@ const data = {
       description:
         'This authentic Slytherin robe has contrasting green lining, pockets, and features an embroidered patch of the house crest. 100% Polyester',
       price: 150.0,
-      rate: 4.9,
-      sale: 0,
+      rate: 5.0,
+      sale: 5,
     },
     {
       id: 48,
