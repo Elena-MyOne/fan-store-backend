@@ -719,41 +719,20 @@ app.get('/products', (req, res) => {
     filteredProducts = filteredProducts.filter(product => product.sale !== 0);
   }
 
-  // if (sort && (order === 'asc' || order === 'desc')) {
-  //   filteredProducts.sort((a, b) => {
-  //     if (order === 'asc') {
-  //       return a[sort] - b[sort];
-  //     } else {
-  //       return b[sort] - a[sort];
-  //     }
-  //   });
-  // }
+  if (sort === 'rate' && order && ['1', '2', '3', '4', '5'].includes(order)) {
+    const orderNumber = parseInt(order);
+    filteredProducts = filteredProducts.filter(product => product.rate === orderNumber);
+  }
 
   if (sort && (order === 'asc' || order === 'desc')) {
-  filteredProducts.sort((a, b) => {
-    if (sort === 'rate') {
-      const ratingOrder = {
-        5: 4, 
-        4: 3,
-        3: 2,
-        2: 1,
-        1: 0,
-      };
-
-      if (order === 'asc') {
-        return ratingOrder[a[sort]] - ratingOrder[b[sort]];
-      } else {
-        return ratingOrder[b[sort]] - ratingOrder[a[sort]];
-      }
-    } else {
+    filteredProducts.sort((a, b) => {
       if (order === 'asc') {
         return a[sort] - b[sort];
       } else {
         return b[sort] - a[sort];
       }
-    }
-  });
-}
+    });
+  }
 
   const startIndex = (pageNumber - 1) * limitNumber;
   const endIndex = startIndex + limitNumber;
