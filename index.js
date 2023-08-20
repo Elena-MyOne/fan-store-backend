@@ -753,6 +753,7 @@ app.get('/products', (req, res) => {
       }
     }
   });
+}
 
   const startIndex = (pageNumber - 1) * limitNumber;
   const endIndex = startIndex + limitNumber;
