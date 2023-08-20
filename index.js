@@ -731,7 +731,7 @@ app.get('/products', (req, res) => {
 
   if (sort && (order === 'asc' || order === 'desc')) {
   filteredProducts.sort((a, b) => {
-    if (sort === 'rating') {
+    if (sort === 'rate') {
       const ratingOrder = {
         5: 4, 
         4: 3,
