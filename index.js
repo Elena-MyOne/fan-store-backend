@@ -738,11 +738,11 @@ app.get('/products', (req, res) => {
     if(order === '25-40') {
       filteredProducts = filteredProducts.filter(product => product.price >= 25 && product.price <= 40);
     } else if (order === '40-70') {
-      filteredProducts = filteredProducts.filter(product => product.price > 40 && product.price <= 70);
+      filteredProducts = filteredProducts.filter(product => product.price >= 40 && product.price <= 70);
     } else if (order === '70-100') {
-      filteredProducts = filteredProducts.filter(product => product.price > 70 && product.price <= 100);
+      filteredProducts = filteredProducts.filter(product => product.price >= 70 && product.price <= 100);
     } else if (order === '100+') {
-      filteredProducts = filteredProducts.filter(product => product.price > 100);
+      filteredProducts = filteredProducts.filter(product => product.price >= 100);
     }
 
     filteredProducts.sort((a, b) => a.price - b.price);
