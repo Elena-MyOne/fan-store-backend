@@ -724,6 +724,15 @@ app.get('/products', (req, res) => {
     filteredProducts = filteredProducts.filter(product => product.rate === orderNumber);
   }
 
+  if (sort === 'sale' && order) {
+    if(order === '30-20'){
+      filteredProducts = filteredProducts.filter(product => product.sale <= 30 || product.sale >= 20);
+    }
+    if(order === '15-5') {
+      filteredProducts = filteredProducts.filter(product => product.sale < 20 || product.sale >= 5);
+    }
+  }
+
   if (sort && (order === 'asc' || order === 'desc')) {
     filteredProducts.sort((a, b) => {
       if (order === 'asc') {
