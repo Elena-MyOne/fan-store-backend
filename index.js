@@ -39,7 +39,7 @@ const data = {
       description:
         'The Elder Wand is one of the most powerful wands in the wizarding world, made of elder wood and containing a core of thestral tail hair. According to legend, it was created by Death himself and whoever possessed it was said to be invincible. It was famously wielded by Albus Dumbledore and then by Harry Potter, who ultimately chose to destroy it.',
       price: 35.0,
-      rate: 4.5,
+      rate: 4,
       sale: 0,
     },
     {
@@ -54,7 +54,7 @@ const data = {
       description:
         "Dolores Umbridge's wand is made of birch and has a core of dragon heartstring. It is shorter than most wands at only eight inches, reflecting Umbridge's preference for neatness and order. Umbridge is known to have used her wand to cast a variety of dark spells and curses, including the Cruciatus Curse.",
       price: 29.85,
-      rate: 4.8,
+      rate: 4,
       sale: 20,
     },
     {
@@ -69,7 +69,7 @@ const data = {
       description:
         "Hermione Granger's wand is made of grapevine wood and has a core of dragon heartstring. It is known for being particularly good at charms and spells that require a delicate touch, which is fitting for Hermione's studious and precise personality. Hermione is known to have used her wand to cast a wide variety of spells, from levitation to conjuring a Patronus.",
       price: 35.0,
-      rate: 4.9,
+      rate: 4,
       sale: 0,
     },
     {
@@ -84,7 +84,7 @@ const data = {
       description:
         "Alastor Moody's wand is a mystery, as its wood and core are unknown. However, Moody is known to have been an incredibly skilled wizard, and his wand undoubtedly played a role in his many successes as an Auror. After Moody's death, his wand was buried with him.",
       price: 25.99,
-      rate: 4.8,
+      rate: 5,
       sale: 20,
     },
     {
@@ -99,7 +99,7 @@ const data = {
       description:
         "Fleur Delacour's wand is made of Pink tree wood and has a core of Veela hair. It is particularly good for charms and spells that require a touch of finesse and grace, reflecting Fleur's elegant personality. Fleur is known to have used her wand to cast spells such as the Patronus Charm and the Bubble-Head Charm.",
       price: 33.25,
-      rate: 4.6,
+      rate: 4,
       sale: 15,
     },
     {
@@ -114,7 +114,7 @@ const data = {
       description:
         'The wand of Cedric Diggory is made of ash with a unicorn hair core. It is described as being "pleasantly springy".',
       price: 28.5,
-      rate: 4.8,
+      rate: 4,
       sale: 0,
     },
     {
@@ -129,7 +129,7 @@ const data = {
       description:
         'The wand of Neville Longbottom is made of cherry wood with a unicorn hair core. It is described as being "quite whippy".',
       price: 29.99,
-      rate: 4.9,
+      rate: 2,
       sale: 0,
     },
     {
@@ -144,7 +144,7 @@ const data = {
       description:
         'A wand made of elder wood and unicorn hair, which was wielded by the duplicitous and treacherous Hogwarts professor Quirinus Quirrell. It is known for being highly effective in the casting of Dark Magic".',
       price: 28.69,
-      rate: 4.5,
+      rate: 3,
       sale: 10,
     },
     {
@@ -159,7 +159,7 @@ const data = {
       description:
         'A wand made of hornbeam wood and dragon heartstring, which was wielded by the skilled and powerful Bulgarian wizard Viktor Krum. It is known for being highly effective in the casting of curses and hexes',
       price: 29.0,
-      rate: 4.8,
+      rate: 5,
       sale: 0,
     },
     {
@@ -174,7 +174,7 @@ const data = {
       description:
         'A wand made of cherry wood and unicorn hair, which was wielded by the timid and fearful Ministry of Magic employee Mary Cattermole. It is known for being highly effective in the casting of protective spells',
       price: 25.5,
-      rate: 4.4,
+      rate: 4,
       sale: 30,
     },
     {
@@ -189,7 +189,7 @@ const data = {
       description:
         'A wand made of birch wood and unicorn hair, which was wielded by the quirky and eccentric Hogwarts student Luna Lovegood. It is known for being highly effective in the casting of unconventional spells and hexes.',
       price: 29.5,
-      rate: 4.8,
+      rate: 3,
       sale: 0,
     },
     {
@@ -204,7 +204,7 @@ const data = {
       description:
         'A wand made of walnut wood and dragon heartstring, which was wielded by the sadistic and ruthless Death Eater Bellatrix Lestrange. It is known for being highly effective in the casting of the Unforgivable Curses.',
       price: 27.05,
-      rate: 4.7,
+      rate: 4,
       sale: 0,
     },
     {
@@ -219,7 +219,7 @@ const data = {
       description:
         'A wand made of elder wood and Thestral hair, which was wielded by the vain and inept Hogwarts professor Gilderoy Lockhart. It is known for being highly decorative and ornate, but otherwise unremarkable',
       price: 25.99,
-      rate: 4.8,
+      rate: 2,
       sale: 5,
     },
     {
@@ -234,7 +234,7 @@ const data = {
       description:
         'A wand made of cypress wood and unicorn hair, which was wielded by the kind and compassionate Hogwarts professor Remus Lupin. It is known for being highly effective in the casting of defensive spells.',
       price: 32.85,
-      rate: 4.9,
+      rate: 5,
       sale: 0,
     },
     {
@@ -249,7 +249,7 @@ const data = {
       description:
         ' A wand made of hawthorn wood and unicorn hair, known for its flexibility and suitability for the Dark Arts. It was passed down through generations of the Malfoy family.',
       price: 35.0,
-      rate: 4.5,
+      rate: 4,
       sale: 0,
     },
     {
@@ -264,7 +264,7 @@ const data = {
       description:
         'A wand is made of fir wood with a dragon heartstring core. It is a sturdy and powerful wand, capable of performing complex magic with precision and skill',
       price: 32.99,
-      rate: 4.8,
+      rate: 4,
       sale: 0,
     },
     {
@@ -279,7 +279,7 @@ const data = {
       description:
         'A wand is made of fir wood with a dragon heartstring core. It is a sturdy and powerful wand, capable of performing complex magic with precision and skill',
       price: 27.85,
-      rate: 4.6,
+      rate: 3,
       sale: 0,
     },
     {
@@ -294,7 +294,7 @@ const data = {
       description:
         "Lucius Malfoy's wand is a wand made of elm wood with a dragon heartstring core. It is known for being highly suited for dark magic and manipulation, fitting for its former owner who was a powerful and influential Death Eater.",
       price: 27.85,
-      rate: 4.7,
+      rate: 3,
       sale: 5,
     },
     {
@@ -309,7 +309,7 @@ const data = {
       description:
         "A wand is a powerful and versatile tool, crafted from holly wood and containing a phoenix feather core. It is known for its unique ability to channel Harry's exceptional magical abilities, and played a crucial role in many of his adventures as a young wizard.",
       price: 35.0,
-      rate: 5.0,
+      rate: 4,
       sale: 0,
     },
     {
@@ -348,7 +348,7 @@ const data = {
       description:
         'Finely sculpted and intricately detailed, Hufflepuff house crest wall art from The Wizarding World of Harry Potter',
       price: 58.9,
-      rate: 4.1,
+      rate: 4,
       sale: 5,
     },
     {
@@ -360,7 +360,7 @@ const data = {
       description:
         'Finely sculpted and intricately detailed, Ravenclaw house crest wall art from The Wizarding World of Harry Potter',
       price: 52.95,
-      rate: 4.1,
+      rate: 4,
       sale: 5,
     },
     {
@@ -372,7 +372,7 @@ const data = {
       description:
         'Finely sculpted and intricately detailed, Gryffindor house crest wall art from The Wizarding World of Harry Potter',
       price: 52.95,
-      rate: 4.1,
+      rate: 5,
       sale: 5,
     },
     {
@@ -384,7 +384,7 @@ const data = {
       description:
         'Hand-painted water globe featuring Hogwarts castle from The Wizarding World of Harry Potter',
       price: 48.95,
-      rate: 3.9,
+      rate: 3,
       sale: 20,
     },
     {
@@ -396,7 +396,7 @@ const data = {
       description:
         'Decorative pillow featuring house Gryffindor with an embroidered lion and house colors. Size 17" x 17", made from polyester and cotton.',
       price: 35.0,
-      rate: 4.2,
+      rate: 4,
       sale: 0,
     },
     {
@@ -408,7 +408,7 @@ const data = {
       description:
         'Decorative pillow featuring house Slytherin with an embroidered snake and house colors. Size 17" x 17", made from polyester and cotton.',
       price: 35.0,
-      rate: 4.2,
+      rate: 4,
       sale: 0,
     },
     {
@@ -432,7 +432,7 @@ const data = {
       description:
         'Hogwarts crest woven decorative pillow. From The Wizarding World of Harry Potter. Size 17" x 17", made from polyester and cotton.',
       price: 32.0,
-      rate: 4.3,
+      rate: 4,
       sale: 10,
     },
     {
@@ -444,7 +444,7 @@ const data = {
       description:
         'Woven decorative pillow featuring The Deathly Hallows on soft, black fabric. Size 14" x 14", made from polyester and cotton.',
       price: 32.0,
-      rate: 4.1,
+      rate: 4,
       sale: 5,
     },
     {
@@ -456,7 +456,7 @@ const data = {
       description:
         'This replica Quidditch Sweater matches those seen in the Harry Potter™ films. Made from Scottish-spun lambswool in the same mill as the film costumes, this jumper is prepared for high winds and limitless adventure in The Wizarding World of Harry Potter. 80% Lambswool/ 20% Polyamide.',
       price: 100.5,
-      rate: 3.9,
+      rate: 3,
       sale: 0,
     },
     {
@@ -468,7 +468,7 @@ const data = {
       description:
         'This replica Quidditch Sweater matches those seen in the Harry Potter™ films. Made from Scottish-spun lambswool in the same mill as the film costumes, this jumper is prepared for high winds and limitless adventure in The Wizarding World of Harry Potter. 80% Lambswool/ 20% Polyamide.',
       price: 100.5,
-      rate: 4.0,
+      rate: 4,
       sale: 0,
     },
     {
@@ -480,7 +480,7 @@ const data = {
       description:
         'This replica Quidditch Sweater matches those seen in the Harry Potter™ films. Made from Scottish-spun lambswool in the same mill as the film costumes, this jumper is prepared for high winds and limitless adventure in The Wizarding World of Harry Potter. 80% Lambswool/ 20% Polyamide.',
       price: 110.0,
-      rate: 4.5,
+      rate: 4,
       sale: 10,
     },
     {
@@ -492,7 +492,7 @@ const data = {
       description:
         'This replica Quidditch Sweater matches those seen in the Harry Potter™ films. Made from Scottish-spun lambswool in the same mill as the film costumes, this jumper is prepared for high winds and limitless adventure in The Wizarding World of Harry Potter. 80% Lambswool/ 20% Polyamide.',
       price: 110.0,
-      rate: 4.5,
+      rate: 5,
       sale: 0,
     },
     {
@@ -504,7 +504,7 @@ const data = {
       description:
         'Replica G for George Sweater as seen in the films from The Wizarding World of Harry Potter. Made from the same wool and silk mixture as the film garment and in the same Scottish mill as the school wear from the films. 90% British Wool/ 10% Silk',
       price: 89.0,
-      rate: 4.2,
+      rate: 4,
       sale: 0,
     },
     {
@@ -516,7 +516,7 @@ const data = {
       description:
         'Replica F for Fred Sweater as seen in the films from The Wizarding World of Harry Potter. Made from the same wool and silk mixture as the film garment and in the same Scottish mill as the school wear from the films. 90% British Wool/ 10% Silk',
       price: 89.0,
-      rate: 4.2,
+      rate: 4,
       sale: 5,
     },
     {
@@ -528,7 +528,7 @@ const data = {
       description:
         'Replica H For Harry Sweater as seen in the films from The Wizarding World Of Harry Potter. Made from the same wool and silk mixture as the movie garment and in the same Scottish mill as the school wear from the films. 90% British Wool/ 10% Silk',
       price: 90.0,
-      rate: 4.5,
+      rate: 4,
       sale: 0,
     },
     {
@@ -540,7 +540,7 @@ const data = {
       description:
         'Replica R For Ron Sweater as seen in the films from The Wizarding World Of Harry Potter™. Made from the same wool and silk mixture as the film garment and in the same Scottish mill as the school wear from the films. 90% British Wool/ 10% Silk',
       price: 89.95,
-      rate: 4.4,
+      rate: 3,
       sale: 0,
     },
     {
@@ -552,7 +552,7 @@ const data = {
       description:
         'Journal inspired by the Monster Book of Monsters with embroidered detailing, ribbon bookmark, parchment-like textured pages, and clasp closure from The Wizarding World of Harry Potter. Size: 7" H x 4 1/2" W. Parchment-like sheets.',
       price: 35.0,
-      rate: 3.4,
+      rate: 3,
       sale: 0,
     },
     {
@@ -564,7 +564,7 @@ const data = {
       description:
         'Stay hydrated during your travels with this sleek, stainless steel tumbler featuring the Gryffindor crest over a matte-scarlet finish. Designed for both hot and cold beverages, this tumbler is insulated, has an ergonomic rubber grip, and fits most cup holders. From The Wizarding World of Harry Potter. Stainless steel, 9" H x 3 5/8" Diameter.',
       price: 32.0,
-      rate: 4.5,
+      rate: 4,
       sale: 0,
     },
     {
@@ -576,7 +576,7 @@ const data = {
       description:
         'Stay hydrated during your travels with this sleek, stainless steel tumbler featuring the Slytherin crest over a matte-green finish. Designed for both hot and cold beverages, this tumbler is insulated, has an ergonomic rubber grip, and fits most cup holders. From The Wizarding World of Harry Potter. Stainless steel, 9" H x 3 5/8" Diameter.',
       price: 30.0,
-      rate: 4.6,
+      rate: 5,
       sale: 0,
     },
     {
@@ -588,7 +588,7 @@ const data = {
       description:
         'Stay hydrated during your travels with this sleek, stainless steel tumbler featuring the Ravenclaw crest over a matte-green finish. Designed for both hot and cold beverages, this tumbler is insulated, has an ergonomic rubber grip, and fits most cup holders. From The Wizarding World of Harry Potter. Stainless steel, 9" H x 3 5/8" Diameter.',
       price: 30.0,
-      rate: 4.2,
+      rate: 4,
       sale: 0,
     },
     {
@@ -600,7 +600,7 @@ const data = {
       description:
         'Stay hydrated during your travels with this sleek, stainless steel tumbler featuring the Hufflepuff crest over a matte-green finish. Designed for both hot and cold beverages, this tumbler is insulated, has an ergonomic rubber grip, and fits most cup holders. From The Wizarding World of Harry Potter. Stainless steel, 9" H x 3 5/8" Diameter.',
       price: 30.0,
-      rate: 4.4,
+      rate: 2,
       sale: 0,
     },
     {
@@ -612,7 +612,7 @@ const data = {
       description:
         'Feather quill pen complete with wooden stand and bottled blue ink from The Wizarding World of Harry Potter. Hen pheasant feather with metal nib and dark blue ink (1 bottle).  8 1/2" L (feather).',
       price: 45.62,
-      rate: 4.8,
+      rate: 5,
       sale: 10,
     },
     {
@@ -624,7 +624,7 @@ const data = {
       description:
         'Slytherin journal with lined, parchment-like textured pages, metal house crest on front cover, sewn in green & silver ribbon bookmarks, and elastic band closure. From The Wizarding World of Harry Potter. 9 3/4" L x 6 3/4" W.',
       price: 35.6,
-      rate: 4.2,
+      rate: 4,
       sale: 0,
     },
     {
@@ -636,7 +636,7 @@ const data = {
       description:
         'Replica Hufflepuff Cup from The Wizarding World of Harry Potter.  Metal, Zinc Alloy - Electroplating, 5 1/4 x 4" W',
       price: 50.42,
-      rate: 4.0,
+      rate: 4,
       sale: 15,
     },
     {
@@ -648,7 +648,7 @@ const data = {
       description:
         'This authentic Slytherin robe has contrasting green lining, pockets, and features an embroidered patch of the house crest. 100% Polyester',
       price: 150.0,
-      rate: 5.0,
+      rate: 5,
       sale: 5,
     },
     {
@@ -660,7 +660,7 @@ const data = {
       description:
         'This authentic Slytherin robe has contrasting green lining, pockets, and features an embroidered patch of the house crest. 100% Polyester',
       price: 150.0,
-      rate: 4.9,
+      rate: 5,
       sale: 0,
     },
     {
@@ -672,7 +672,7 @@ const data = {
       description:
         'This authentic Slytherin robe has contrasting green lining, pockets, and features an embroidered patch of the house crest. 100% Polyester',
       price: 150.0,
-      rate: 4.6,
+      rate: 4,
       sale: 25,
     },
     {
@@ -684,7 +684,7 @@ const data = {
       description:
         'This authentic Slytherin robe has contrasting green lining, pockets, and features an embroidered patch of the house crest. 100% Polyester',
       price: 150.0,
-      rate: 4.5,
+      rate: 4,
       sale: 10,
     },
   ],
@@ -719,15 +719,40 @@ app.get('/products', (req, res) => {
     filteredProducts = filteredProducts.filter(product => product.sale !== 0);
   }
 
+  // if (sort && (order === 'asc' || order === 'desc')) {
+  //   filteredProducts.sort((a, b) => {
+  //     if (order === 'asc') {
+  //       return a[sort] - b[sort];
+  //     } else {
+  //       return b[sort] - a[sort];
+  //     }
+  //   });
+  // }
+
   if (sort && (order === 'asc' || order === 'desc')) {
-    filteredProducts.sort((a, b) => {
+  filteredProducts.sort((a, b) => {
+    if (sort === 'rating') {
+      const ratingOrder = {
+        5: 4, 
+        4: 3,
+        3: 2,
+        2: 1,
+        1: 0,
+      };
+
+      if (order === 'asc') {
+        return ratingOrder[a[sort]] - ratingOrder[b[sort]];
+      } else {
+        return ratingOrder[b[sort]] - ratingOrder[a[sort]];
+      }
+    } else {
       if (order === 'asc') {
         return a[sort] - b[sort];
       } else {
         return b[sort] - a[sort];
       }
-    });
-  }
+    }
+  });
 
   const startIndex = (pageNumber - 1) * limitNumber;
   const endIndex = startIndex + limitNumber;
