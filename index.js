@@ -726,11 +726,12 @@ app.get('/products', (req, res) => {
 
   if (sort === 'sale' && order) {
     if(order === '30-20'){
-      filteredProducts = filteredProducts.filter(product => product.sale <= 30 || product.sale >= 20);
+      filteredProducts = filteredProducts.filter(product => product.sale <= 30 && product.sale >= 20);
+    }else if(order === '15-5') {
+      filteredProducts = filteredProducts.filter(product => product.sale < 20 && product.sale >= 5);
     }
-    if(order === '15-5') {
-      filteredProducts = filteredProducts.filter(product => product.sale < 20 || product.sale >= 5);
-    }
+
+    filteredProducts.sort((a, b) => b.sale - a.sale);
   }
 
   if (sort && (order === 'asc' || order === 'desc')) {
