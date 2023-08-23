@@ -885,8 +885,8 @@ app.get('/products', (req, res) => {
   }
 
   if (faculty && faculty !== 'All') {
-    const formattedFaculty = faculty.charAt(0).toUpperCase() + faculty.slice(1);
-    filteredProducts = filteredProducts.filter((product) => product.faculty === formattedFaculty);
+    // const formattedFaculty = faculty.charAt(0).toUpperCase() + faculty.slice(1);
+    filteredProducts = filteredProducts.filter((product) => product.faculty === faculty);
   }
 
   if (name) {
