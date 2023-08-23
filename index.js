@@ -58,7 +58,7 @@ const data = {
       price: 225.0,
       rate: 5,
       sale: 0,
-      new: true,
+      newProduct: true,
       bestseller: true,
     },
     {
@@ -72,7 +72,7 @@ const data = {
       price: 225.0,
       rate: 4,
       sale: 0,
-      new: true,
+      newProduct: true,
       bestseller: true,
     },
     {
@@ -86,7 +86,7 @@ const data = {
       price: 225.0,
       rate: 5,
       sale: 0,
-      new: true,
+      newProduct: true,
       bestseller: true,
     },
     {
@@ -100,7 +100,7 @@ const data = {
       price: 225.0,
       rate: 4,
       sale: 0,
-      new: true,
+      newProduct: true,
       bestseller: true,
     },
     {
@@ -113,7 +113,7 @@ const data = {
       price: 100.0,
       rate: 4,
       sale: 0,
-      new: true,
+      newProduct: true,
       bestseller: true,
     },
     {
@@ -126,7 +126,7 @@ const data = {
       price: 100.0,
       rate: 4,
       sale: 0,
-      new: true,
+      newProduct: true,
       bestseller: false,
     },
     {
@@ -139,7 +139,7 @@ const data = {
       price: 100.0,
       rate: 4,
       sale: 0,
-      new: true,
+      newProduct: true,
       bestseller: false,
     },
     {
@@ -152,7 +152,7 @@ const data = {
       price: 100.0,
       rate: 4,
       sale: 0,
-      new: true,
+      newProduct: true,
       bestseller: false,
     },
     {
@@ -168,7 +168,7 @@ const data = {
       price: 35.0,
       rate: 4,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: true,
     },
     {
@@ -184,7 +184,7 @@ const data = {
       price: 29.85,
       rate: 4,
       sale: 20,
-      new: true,
+      newProduct: true,
       bestseller: false,
     },
     {
@@ -200,7 +200,7 @@ const data = {
       price: 35.0,
       rate: 4,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: true,
     },
     {
@@ -216,7 +216,7 @@ const data = {
       price: 25.99,
       rate: 5,
       sale: 20,
-      new: false,
+      newProduct: false,
       bestseller: false,
     },
     {
@@ -232,7 +232,7 @@ const data = {
       price: 33.25,
       rate: 4,
       sale: 15,
-      new: false,
+      newProduct: false,
       bestseller: false,
     },
     {
@@ -248,7 +248,7 @@ const data = {
       price: 28.5,
       rate: 4,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: false,
     },
     {
@@ -264,7 +264,7 @@ const data = {
       price: 29.99,
       rate: 2,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: true,
     },
     {
@@ -280,7 +280,7 @@ const data = {
       price: 28.69,
       rate: 3,
       sale: 10,
-      new: false,
+      newProduct: false,
       bestseller: false,
     },
     {
@@ -296,7 +296,7 @@ const data = {
       price: 29.0,
       rate: 5,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: false,
     },
     {
@@ -312,7 +312,7 @@ const data = {
       price: 25.5,
       rate: 4,
       sale: 30,
-      new: true,
+      newProduct: true,
       bestseller: false,
     },
     {
@@ -328,7 +328,7 @@ const data = {
       price: 29.5,
       rate: 3,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: true,
     },
     {
@@ -344,7 +344,7 @@ const data = {
       price: 27.05,
       rate: 4,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: true,
     },
     {
@@ -360,7 +360,7 @@ const data = {
       price: 25.99,
       rate: 2,
       sale: 5,
-      new: true,
+      newProduct: true,
       bestseller: false,
     },
     {
@@ -376,7 +376,7 @@ const data = {
       price: 32.85,
       rate: 5,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: true,
     },
     {
@@ -392,7 +392,7 @@ const data = {
       price: 35.0,
       rate: 4,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: true,
     },
     {
@@ -408,7 +408,7 @@ const data = {
       price: 32.99,
       rate: 4,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: true,
     },
     {
@@ -424,7 +424,7 @@ const data = {
       price: 27.85,
       rate: 3,
       sale: 0,
-      new: true,
+      newProduct: true,
       bestseller: false,
     },
     {
@@ -440,7 +440,7 @@ const data = {
       price: 27.85,
       rate: 3,
       sale: 5,
-      new: true,
+      newProduct: true,
       bestseller: false,
     },
     {
@@ -456,7 +456,7 @@ const data = {
       price: 35.0,
       rate: 4,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: true,
     },
     {
@@ -472,7 +472,7 @@ const data = {
       price: 35.0,
       rate: 5.0,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: false,
     },
     {
@@ -485,7 +485,7 @@ const data = {
       price: 62.9,
       rate: 4.0,
       sale: 5,
-      new: true,
+      newProduct: true,
       bestseller: false,
     },
     {
@@ -498,7 +498,7 @@ const data = {
       price: 58.9,
       rate: 4,
       sale: 5,
-      new: true,
+      newProduct: true,
       bestseller: false,
     },
     {
@@ -511,7 +511,7 @@ const data = {
       price: 52.95,
       rate: 4,
       sale: 5,
-      new: true,
+      newProduct: true,
       bestseller: false,
     },
     {
@@ -524,7 +524,7 @@ const data = {
       price: 52.95,
       rate: 5,
       sale: 5,
-      new: true,
+      newProduct: true,
       bestseller: false,
     },
     {
@@ -537,7 +537,7 @@ const data = {
       price: 48.95,
       rate: 3,
       sale: 20,
-      new: true,
+      newProduct: true,
       bestseller: false,
     },
     {
@@ -550,7 +550,7 @@ const data = {
       price: 35.0,
       rate: 4,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: false,
     },
     {
@@ -576,7 +576,7 @@ const data = {
       price: 35.0,
       rate: 5.0,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: false,
     },
     {
@@ -589,7 +589,7 @@ const data = {
       price: 32.0,
       rate: 4,
       sale: 10,
-      new: false,
+      newProduct: false,
       bestseller: false,
     },
     {
@@ -602,7 +602,7 @@ const data = {
       price: 32.0,
       rate: 4,
       sale: 5,
-      new: false,
+      newProduct: false,
       bestseller: false,
     },
     {
@@ -615,7 +615,7 @@ const data = {
       price: 100.5,
       rate: 3,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: false,
     },
     {
@@ -627,7 +627,7 @@ const data = {
       description: 'This replica Quidditch Sweater matches those seen in the Harry Potter™ films. Made from Scottish-spun lambswool in the same mill as the film costumes, this jumper is prepared for high winds and limitless adventure in The Wizarding World of Harry Potter. 80% Lambswool/ 20% Polyamide.',
       price: 100.5,
       rate: 4,
-      new: false,
+      newProduct: false,
       bestseller: false,
       sale: 0,
     },
@@ -641,7 +641,7 @@ const data = {
       price: 110.0,
       rate: 4,
       sale: 10,
-      new: false,
+      newProduct: false,
       bestseller: false,
     },
     {
@@ -654,7 +654,7 @@ const data = {
       price: 110.0,
       rate: 5,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: false,
     },
     {
@@ -667,7 +667,7 @@ const data = {
       price: 89.0,
       rate: 4,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: true,
     },
     {
@@ -680,7 +680,7 @@ const data = {
       price: 89.0,
       rate: 4,
       sale: 5,
-      new: false,
+      newProduct: false,
       bestseller: true,
     },
     {
@@ -693,7 +693,7 @@ const data = {
       price: 90.0,
       rate: 4,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: true,
     },
     {
@@ -706,7 +706,7 @@ const data = {
       price: 89.95,
       rate: 3,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: true,
     },
     {
@@ -719,7 +719,7 @@ const data = {
       price: 35.0,
       rate: 3,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: false,
     },
     {
@@ -732,7 +732,7 @@ const data = {
       price: 32.0,
       rate: 4,
       sale: 0,
-      new: true,
+      newProduct: true,
       bestseller: true,
     },
     {
@@ -745,7 +745,7 @@ const data = {
       price: 30.0,
       rate: 5,
       sale: 0,
-      new: true,
+      newProduct: true,
       bestseller: true,
     },
     {
@@ -758,7 +758,7 @@ const data = {
       price: 30.0,
       rate: 4,
       sale: 0,
-      new: true,
+      newProduct: true,
       bestseller: true,
     },
     {
@@ -771,7 +771,7 @@ const data = {
       price: 30.0,
       rate: 2,
       sale: 0,
-      new: true,
+      newProduct: true,
       bestseller: true,
     },
     {
@@ -784,7 +784,7 @@ const data = {
       price: 45.62,
       rate: 5,
       sale: 10,
-      new: false,
+      newProduct: false,
       bestseller: false,
     },
     {
@@ -797,7 +797,7 @@ const data = {
       price: 35.6,
       rate: 4,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: false,
     },
     {
@@ -810,7 +810,7 @@ const data = {
       price: 50.42,
       rate: 4,
       sale: 15,
-      new: false,
+      newProduct: false,
       bestseller: false,
     },
     {
@@ -823,7 +823,7 @@ const data = {
       price: 150.0,
       rate: 5,
       sale: 5,
-      new: false,
+      newProduct: false,
       bestseller: true,
     },
     {
@@ -836,7 +836,7 @@ const data = {
       price: 150.0,
       rate: 5,
       sale: 0,
-      new: false,
+      newProduct: false,
       bestseller: true,
     },
     {
@@ -849,7 +849,7 @@ const data = {
       price: 150.0,
       rate: 4,
       sale: 25,
-      new: false,
+      newProduct: false,
       bestseller: true,
     },
     {
@@ -862,7 +862,7 @@ const data = {
       price: 150.0,
       rate: 4,
       sale: 10,
-      new: false,
+      newProduct: false,
       bestseller: true,
     },
   ],
@@ -895,6 +895,14 @@ app.get('/products', (req, res) => {
 
   if (sale) {
     filteredProducts = filteredProducts.filter((product) => product.sale !== 0);
+  }
+
+  if (sort === 'new') {
+    filteredProducts = filteredProducts.filter((product) => product.newProduct === true);
+  }
+
+  if (sort === 'bestseller') {
+    filteredProducts = filteredProducts.filter((product) => product.bestseller === true);
   }
 
   if (sort === 'rate' && order && ['1', '2', '3', '4', '5'].includes(order)) {
