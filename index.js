@@ -58,7 +58,7 @@ const data = {
       price: 225.0,
       rate: 5,
       sale: 0,
-      newProduct: true,
+      newProduct: false,
       bestseller: true,
     },
     {
@@ -72,7 +72,7 @@ const data = {
       price: 225.0,
       rate: 4,
       sale: 0,
-      newProduct: true,
+      newProduct: false,
       bestseller: true,
     },
     {
@@ -86,7 +86,7 @@ const data = {
       price: 225.0,
       rate: 5,
       sale: 0,
-      newProduct: true,
+      newProduct: false,
       bestseller: true,
     },
     {
@@ -100,7 +100,7 @@ const data = {
       price: 225.0,
       rate: 4,
       sale: 0,
-      newProduct: true,
+      newProduct: false,
       bestseller: true,
     },
     {
