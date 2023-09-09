@@ -710,7 +710,7 @@ const data = {
       bestseller: true,
     },
     {
-      id: 49,
+      id: 47,
       category: CATEGORY.SOUVENIRS,
       faculty: FACULTY.NONE,
       name: 'Monster Book of Monsters Journal',
@@ -723,7 +723,7 @@ const data = {
       bestseller: false,
     },
     {
-      id: 50,
+      id: 48,
       category: CATEGORY.SOUVENIRS,
       faculty: FACULTY.GRYFFINDOR,
       name: 'Gryffindor Travel Tumbler',
@@ -736,7 +736,7 @@ const data = {
       bestseller: true,
     },
     {
-      id: 51,
+      id: 49,
       category: CATEGORY.SOUVENIRS,
       faculty: FACULTY.SLYTHERIN,
       name: 'Slytherin Travel Tumbler',
@@ -749,7 +749,7 @@ const data = {
       bestseller: true,
     },
     {
-      id: 52,
+      id: 50,
       category: CATEGORY.SOUVENIRS,
       faculty: FACULTY.RAVENCLAW,
       name: 'Ravenclaw Travel Tumbler',
@@ -762,7 +762,7 @@ const data = {
       bestseller: true,
     },
     {
-      id: 53,
+      id: 51,
       category: CATEGORY.SOUVENIRS,
       faculty: FACULTY.HUFFLEPUFF,
       name: 'Hufflepuff Travel Tumbler',
@@ -775,7 +775,7 @@ const data = {
       bestseller: true,
     },
     {
-      id: 54,
+      id: 52,
       category: CATEGORY.SOUVENIRS,
       faculty: FACULTY.NONE,
       name: 'Quill Stand And Ink Set',
@@ -788,7 +788,7 @@ const data = {
       bestseller: false,
     },
     {
-      id: 55,
+      id: 53,
       category: CATEGORY.SOUVENIRS,
       faculty: FACULTY.SLYTHERIN,
       name: 'Slytherin Lined Journal',
@@ -801,7 +801,7 @@ const data = {
       bestseller: false,
     },
     {
-      id: 56,
+      id: 54,
       category: CATEGORY.SOUVENIRS,
       faculty: FACULTY.HUFFLEPUFF,
       name: 'Hufflepuff Cup',
@@ -814,7 +814,7 @@ const data = {
       bestseller: false,
     },
     {
-      id: 57,
+      id: 55,
       category: CATEGORY.ROBES,
       faculty: FACULTY.SLYTHERIN,
       name: 'Slytherin Robe',
@@ -827,7 +827,7 @@ const data = {
       bestseller: true,
     },
     {
-      id: 58,
+      id: 56,
       category: CATEGORY.ROBES,
       faculty: FACULTY.GRYFFINDOR,
       name: 'Gryffindor Robe',
@@ -840,7 +840,7 @@ const data = {
       bestseller: true,
     },
     {
-      id: 59,
+      id: 57,
       category: CATEGORY.ROBES,
       faculty: FACULTY.RAVENCLAW,
       name: 'Ravenclaw Robe',
@@ -853,7 +853,7 @@ const data = {
       bestseller: true,
     },
     {
-      id: 60,
+      id: 58,
       category: CATEGORY.ROBES,
       faculty: FACULTY.HUFFLEPUFF,
       name: 'Hufflepuff Robe',
